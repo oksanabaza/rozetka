@@ -1,0 +1,48 @@
+.header-top{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  background-color: #122538;
+}
+.header-top-right{
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  
+}
+.geo{
+  margin-left: 30px;
+}
+.welcome{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.welcome img{
+  padding: 2px;
+  /* margin-bottom: -2px; */
+  vertical-align: middle;
+}
+.lang a{
+color: #fff;
+text-decoration: none;
+}
+.welcome a{
+color: #fff;
+text-decoration: none;
+font-weight: 800;
+}
+.link img{
+  margin-right: 10px;
+  vertical-align: middle;
+
+}
+.link{
+  margin-left: 30px;
+}
+.link:hover{
+  text-decoration: underline;
+}

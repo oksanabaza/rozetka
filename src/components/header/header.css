@@ -1,0 +1,8 @@
+.Header-container{
+display: flex;
+flex-direction: column;
+background: #122538;
+width: 100%;
+
+}
+
