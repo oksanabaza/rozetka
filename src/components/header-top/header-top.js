@@ -1,10 +1,10 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 import Posts from '../posts/posts';
 import './header-top.css';
 
@@ -12,7 +12,7 @@ const HeaderTop = ({ posts }) => {
   return (
     <div className="header-top">
       <div className="header-top-left">
-        <Router>
+        {/* <Router>
           <div >
             <ul>
               <li>
@@ -38,7 +38,25 @@ const HeaderTop = ({ posts }) => {
 
           </Switch>
 
-        </Router>
+        </Router> */}
+        <div >
+          <ul>
+            <li className="link">
+
+              <img src="https://eximlab.ru/local/templates/exim_template/img/phone-mini-head.png" width='15px' />
+              (044)537-02-22
+            </li>
+            <li className="link">
+              Контакты
+            </li>
+            <li className="link">
+              Посты
+            </li>
+            <li className="link">
+              Помощь
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="header-top-right">

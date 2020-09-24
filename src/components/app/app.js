@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './app.css';
 import Container from '../container/container';
 import Header from '../header/header';
-// import Cards from '../cards/cards';
-// import CardsPage from '../cards-page/cards-page';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import Cards from '../cards/cards';
+import CardsPage from '../cards-page/cards-page';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Posts from '../posts/posts';
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -77,17 +78,25 @@ const App = () => {
       {/* <Router>
         <div >
           <ul>
-
             <li>
-              <Link className="link" to="/card">
-                <CardsPage />
-              </Link>
+              <Link className="link" to="/tel">
+                <img src="https://eximlab.ru/local/templates/exim_template/img/phone-mini-head.png" width='15px' />
+                (044)537-02-22</Link>
+            </li>
+            <li>
+              <Link className="link" to="/">Контакты</Link>
+            </li>
+            <li>
+              <Link className="link" to="/posts">Посты</Link>
+            </li>
+            <li>
+              <Link className="link" to="/about">Помощь</Link>
             </li>
           </ul>
         </div>
         <Switch>
-          <Route path="/card">
-            <CardsPage />
+          <Route path="/posts">
+            <Posts posts={posts} />
           </Route>
 
         </Switch>

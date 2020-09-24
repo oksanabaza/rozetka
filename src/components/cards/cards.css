@@ -2,14 +2,14 @@
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-width: 100%;
+min-width: 100%;
 height: 100%;
 }
 .Card{
-/* border-right: 1px solid #d1e0e0;
-border-bottom: 1px solid #d1e0e0; */
+border-right: 1px solid #d1e0e0;
+border-bottom: 1px solid #d1e0e0;
 padding: 20px;
-max-width: 20%;
+width: 20%;
 cursor: pointer;
 min-height: 100%;
 display: flex;
