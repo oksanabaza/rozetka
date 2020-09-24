@@ -5,13 +5,14 @@
 
 border-right: 1px solid #d1e0e0;
 border-bottom: 1px solid #d1e0e0;
+margin-top: 40px;
 /* margin-top: 40px;
 margin-bottom: 40px; */
 }
 .Aside ul{
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 margin-bottom: 40px;
   
 }
@@ -98,8 +99,9 @@ font-size: large;
 
 }
 .item:hover{
-  font-size: 22px;
-  color: #3e77bb;
+
+  color: red;
+  text-decoration: underline;
 }
 .item-img{
   vertical-align: middle;

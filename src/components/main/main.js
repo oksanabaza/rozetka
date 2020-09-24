@@ -12,9 +12,11 @@ import Cards from '../cards/cards';
 const Main = ({ data }) => {
   return (
     <div className="Main">
+      <div className="video"><video autoplay="autoplay" loop="loop" width="100%">
+        <source src="https://s0.rozetka.com.ua/video/autumnsale_2020_ru.mp4" /></video></div>
       <Cards data={data} />
 
-    </div>
+    </div >
     // <Router>
     //   <div className="Main-cards">
     //     <h1 className="Main-title">ТОП-товары</h1>

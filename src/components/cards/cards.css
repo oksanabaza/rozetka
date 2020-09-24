@@ -24,6 +24,7 @@ border-radius: 9px;
 .Main-cards{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .Card img{
 margin: auto;
