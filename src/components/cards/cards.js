@@ -10,7 +10,7 @@ const Cards = ({ data }) => {
     <div className="Main-cards">
       <h1 className="Main-title">ТОП-товары</h1>
 
-      <div className="Cards">
+      <div className="Cards" key="id">
         {data.map((data) => {
           return (<div className="Card">
             <div className="card-img"> <img src={data.src} /></div>

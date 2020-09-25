@@ -11,6 +11,9 @@ import {
   Link
 } from "react-router-dom";
 import Posts from '../posts/posts';
+import Aside from '../aside/aside';
+import Main from '../main/main';
+
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -29,41 +32,49 @@ const App = () => {
   };
   const data = [
     {
+      id: 1,
       src: "https://i2.rozetka.ua/goods/14835265/philips_series_1200_ep1222_00_images_14835265027.jpg",
       title: "Кофемашина PHILIPS Series 1200 EP1222/00",
       price: 9349
     },
     {
+      id: 2,
       src: "https://i2.rozetka.ua/goods/13811027/krups_essential_ea816570_images_13811027647.jpg",
       title: "Кофемашина KRUPS Essential EA816570",
       price: 10999
     },
     {
+      id: 3,
       src: "https://i8.rozetka.ua/goods/18137140/copy_acer_nx_hn5eu_00j_5eb3cfb04a2ec_images_18137140033.jpg",
       title: "Ноутбук Acer Aspire 5 A515-54G-502N (NX.HVGEU.006) Pure Silver",
       price: 17999
     },
     {
+      id: 4,
       src: "https://i8.rozetka.ua/goods/18453107/panasonic_tx_43gxr600_images_18453107893.jpg",
       title: "Телевизор Panasonic TX-43GXR600",
       price: 8499
     },
     {
+      id: 5,
       src: "https://i2.rozetka.ua/goods/19807184/motorola_paje0031rs_images_19807184203.jpg",
       title: "Мобильный телефон Motorola E6s 4/64GB Meteor Grey",
       price: 2999
     },
     {
+      id: 6,
       src: "https://i8.rozetka.ua/goods/15917628/copy_aoc_24g2u5_bk_5dfc9b80dc675_images_15917628350.jpg",
       title: "Монитор 23.8 AOC 24G2U / BK ",
       price: 4999
     },
     {
+      id: 7,
       src: "https://i1.rozetka.ua/goods/3550302/xiaomi_vxn4220gl_images_3550302767.jpg ",
       title: "УМБ Xiaomi Mi Power Bank 2C 20000 mAh QC3.0 PLM06ZM",
       price: 589
     },
     {
+      id: 8,
       src: "https://i2.rozetka.ua/goods/1857754/rapoo_v280_black_images_1857754952.jpg",
       title: "Мышь Rapoo V280 USB Black",
       price: 499
@@ -74,32 +85,28 @@ const App = () => {
   return (
     <div className="AppContainer">
       <Header posts={posts} />
+      {/* <Cards data={data} /> */}
+      {/* <Aside /> */}
       <Container data={data} />
       {/* <Router>
-        <div >
-          <ul>
-            <li>
-              <Link className="link" to="/tel">
-                <img src="https://eximlab.ru/local/templates/exim_template/img/phone-mini-head.png" width='15px' />
-                (044)537-02-22</Link>
-            </li>
-            <li>
-              <Link className="link" to="/">Контакты</Link>
-            </li>
-            <li>
-              <Link className="link" to="/posts">Посты</Link>
-            </li>
-            <li>
-              <Link className="link" to="/about">Помощь</Link>
-            </li>
-          </ul>
-        </div>
         <Switch>
-          <Route path="/posts">
-            <Posts posts={posts} />
+          <Route path="/cards">
+            {<CardsPage />}
           </Route>
 
         </Switch>
+        <div >
+          <ul>
+
+            <li>
+              <Link className="link" to="/cards">
+                <Cards data={data} />
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+
 
       </Router> */}
 
